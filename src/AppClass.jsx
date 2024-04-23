@@ -33,6 +33,7 @@ export default class AppClass extends Component{
     return (
       <div>
         <h1>Kalvium Gallery</h1>
+        <h1>Class Componentcd </h1>
        {/* <div className='parent'>
          <img src={image_arr[0].img} className='image'/>
          <img src={image_arr[0].img} className='image'/>
@@ -41,9 +42,9 @@ export default class AppClass extends Component{
        </div> */}
        <div className='parent'>
        {
-         image_arr.map(elem=>{
+         image_arr.map((elem,i)=>{
            return(
-             <img className='image' src={elem.img}/>
+             <img key={i} className='image' src={elem.img}/>
            )
          })
        }
